@@ -24,7 +24,7 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 20px;
+    border-radius: 0px;
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 0px;
@@ -39,8 +39,8 @@ tooltip {
     background: @wb-act-bg;
     color: @wb-act-fg;
     margin-left: 2px;
-    padding-left: 11px;
-    padding-right: 11px;
+    /* padding-left: 11px;
+    padding-right: 11px; */
     margin-right: 2px;
     animation: ws_active 20s ease-in-out 1;
     transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
