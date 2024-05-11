@@ -24,15 +24,19 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 0px;
+    border-radius: 20px;
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 0px;
     padding-left: 2px;
     padding-right: 2px;
     margin-right: 0px;
-    color: @main-fg;
+    color: white;
     animation: ws_normal 20s ease-in-out 1;
+}
+
+#workspaces button.empty {
+    color: @main-fg;
 }
 
 #workspaces button.active {
