@@ -274,10 +274,10 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "<span color='#F9E2AF'>CHAR: {capacity}%</span>",
+        "format": "<span color='#F9E2AF'>CHAR: {icon} {capacity}%</span>",
         "rotate": 0,
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format-charging": "<span color='#F9E2AF'>CHAR:  {capacity}%</span>",
+        "format-plugged": "<span color='#F9E2AF'>CHAR:  {capacity}%</span>",
         "format-alt": "{time} {icon}",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
