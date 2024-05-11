@@ -15,10 +15,9 @@
 // positions generated based on config.ctl //
 "modules-left": ["custom/padd","custom/arch_logo", "hyprland/workspaces", "custom/omp", "custom/sepr"],
 "modules-center": ["hyprland/window"],
-"modules-right": ["custom/sepl", "custom/omp" ,"network","bluetooth","pulseaudio","pulseaudio#microphone","cpu","memory", "custom/omp",
-"custom/sepr", "custom/omp", "tray","battery", "custom/omp",
-"custom/sepr", "custom/omp", "idle_inhibitor","clock", 
-"custom/sepr", "custom/omp", "custom/wallchange","custom/theme","custom/wbar","custom/cliphist","custom/power","custom/padd"],
+"modules-right": ["custom/sepl","tray",
+"custom/sepr", "custom/omp", "bluetooth","pulseaudio","pulseaudio#microphone","cpu","memory","battery", "custom/omp",
+"custom/sepr", "custom/omp", "clock", "custom/omp"],
 
 // sourced from modules based on config.ctl //
 
@@ -109,9 +108,9 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p}",
+        "format": "<span color='#F38BA8'>{:%d·%m·%y - %I:%M %p}</span>",
         "rotate": 0,
-        "format-alt": "{:%R 󰃭 %d·%m·%y}",
+        // "format-alt": "{:%R 󰃭 %d·%m·%y}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
             "mode": "month",
