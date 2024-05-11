@@ -16,14 +16,19 @@
 "modules-left": ["custom/padd","custom/arch_logo", "hyprland/workspaces", "custom/omp", "custom/sepr"],
 "modules-center": ["hyprland/window"],
 "modules-right": ["custom/sepl","tray",
-"custom/sepr", "custom/omp", "bluetooth","pulseaudio","pulseaudio#microphone","cpu","memory","battery", "custom/omp",
+"custom/sepr", "bluetooth", 
+    "custom/sepr",  "pulseaudio", 
+    "custom/sepr", "pulseaudio#microphone",
+    "custom/sepr", "cpu",
+    "custom/sepr", "memory", 
+    "custom/sepr", "battery",
 "custom/sepr", "custom/omp", "clock", "custom/omp"],
 
 // sourced from modules based on config.ctl //
 
     "cpu": {
         "interval": 10,
-        "format": "󰍛 {usage}%",
+        "format": "<span color='#A6E3A1'>CPU: {usage}%</span>",
         "rotate": 0,
         "format-alt": "{icon0}{icon1}{icon2}{icon3}",
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
@@ -36,13 +41,13 @@
             "m": 30, // medium
         },
         "interval": 30,
-        "format": "󰾆 {used}GB",
+        "format": "<span color='#F5C2E7'>MEM: {used}GB</span>",
         "rotate": 0,
-        "format-m": "󰾅 {used}GB",
-        "format-h": "󰓅 {used}GB",
-        "format-c": " {used}GB",
-        "format-alt": "󰾆 {percentage}%",
-        "max-length": 10,
+        // "format-m": "󰾅 {used}GB",
+        // "format-h": "󰓅 {used}GB",
+        // "format-c": " {used}GB",
+        // "format-alt": "󰾆 {percentage}%",
+        // "max-length": 10,
         "tooltip": true,
         "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
     },
@@ -196,7 +201,7 @@
         "format": "",
         "rotate": 0,
         "format-disabled": "",
-        "format-connected": " {num_connections}",
+        "format-connected": "BLU: {num_connections}",
         "format-connected-battery": "{icon} {num_connections}",
         // "format-connected-battery": "{icon} {device_alias}-{device_battery_percentage}%",
         "format-icons": ["󰥇", "󰤾", "󰤿", "󰥀", "󰥁", "󰥂", "󰥃", "󰥄", "󰥅", "󰥆", "󰥈"],
@@ -208,7 +213,7 @@
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}",
+        "format": "<span color='#BAC2DE'>VOL: {volume}</span>",
         "rotate": 0,
         "format-muted": "婢",
         "on-click": "pavucontrol -t 3",
@@ -229,7 +234,7 @@
     },
 
     "pulseaudio#microphone": {
-        "format": "{format_source}",
+        "format": "<span color='#94E2D5'>MIC: {format_source}</span>",
         "rotate": 0,
         "format-source": "",
         "format-source-muted": "",
@@ -269,7 +274,7 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
+        "format": "<span color='#F9E2AF'>CHAR: {capacity}%</span>",
         "rotate": 0,
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
