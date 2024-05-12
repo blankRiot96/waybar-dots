@@ -15,14 +15,14 @@
 // positions generated based on config.ctl //
 "modules-left": ["custom/padd","custom/arch_logo", "hyprland/workspaces", "custom/omp", "custom/sepr"],
 "modules-center": ["hyprland/window"],
-"modules-right": ["custom/sepl","tray",
-"custom/sepr", "bluetooth", 
-    "custom/sepr",  "pulseaudio", 
-    "custom/sepr", "pulseaudio#microphone",
-    "custom/sepr", "cpu",
-    "custom/sepr", "memory", 
-    "custom/sepr", "battery",
-"custom/sepr", "custom/omp", "clock", "custom/omp"],
+"modules-right": ["custom/sepl", "tray", "custom/omp",
+"custom/sepl", "bluetooth", "custom/omp",
+    "custom/sepl",  "pulseaudio", "custom/omp", 
+    "custom/sepl", "pulseaudio#microphone", "custom/omp",
+    "custom/sepl", "cpu", "custom/omp",
+    "custom/sepl", "memory", "custom/omp",
+    "custom/sepl", "battery", "custom/omp",
+"custom/sepl",  "clock", "custom/omp"],
 
 // sourced from modules based on config.ctl //
 

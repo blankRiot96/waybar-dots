@@ -90,6 +90,15 @@ tooltip {
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+#custom-arch_logo {
+    color: @main-fg;
+    background: @main-bg;
+    opacity: 1;
+    margin: 3px 0px 3px 0px;
+    padding-left: 4px;
+    padding-right: 4px;  
+}
+
 #backlight,
 #battery,
 #bluetooth,
@@ -115,8 +124,6 @@ tooltip {
 #custom-wbar,
 #window,
 #workspaces,
-#custom-arch_logo,
-#custom-omp,
 #custom-l_end,
 #custom-r_end,
 #custom-sl_end,
@@ -129,6 +136,11 @@ tooltip {
     margin: 3px 0px 3px 0px;
     padding-left: 4px;
     padding-right: 4px;
+
+    /* Border stuff */
+    /* border-left: 1px solid rgba(135, 176, 249, 0.5);
+    margin-top: 4px;
+    margin-bottom: 4px; */
 }
 
 #workspaces,
@@ -175,8 +187,15 @@ tooltip {
 #custom-sepl {
     border-left: 1px solid @main-fg;
     opacity: 0.5;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
+
 #custom-sepr {
     border-right: 1px solid @main-fg;
     opacity: 0.5;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
+
+
