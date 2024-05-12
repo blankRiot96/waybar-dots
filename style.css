@@ -134,13 +134,9 @@ tooltip {
     background: @main-bg;
     opacity: 1;
     margin: 3px 0px 3px 0px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
 
-    /* Border stuff */
-    /* border-left: 1px solid rgba(135, 176, 249, 0.5);
-    margin-top: 4px;
-    margin-bottom: 4px; */
 }
 
 #workspaces,
@@ -199,3 +195,15 @@ tooltip {
 }
 
 
+#clock,
+#battery,
+#memory,
+#cpu,
+#pulseaudio,
+#bluetooth,
+#tray {
+    /* Border stuff */
+    border-left: 1px solid rgba(135, 176, 249, 0.5);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
