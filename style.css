@@ -35,19 +35,29 @@ tooltip {
     animation: ws_normal 20s ease-in-out 1;
 }
 
+@keyframes colorChange {
+    from {
+        background: @wb-hvr-bg;
+    }
+    to {
+        background: @wb-act-bg;
+    }
+}
+
 #workspaces button.empty {
     color: @main-fg;
 }
 
 #workspaces button.active {
-    background: @wb-act-bg;
+    background: @wb-hvr-bg;
+    animation: colorChange 1.0s forwards;
     color: @wb-act-fg;
     margin-left: 2px;
     /* padding-left: 11px;
     padding-right: 11px; */
     margin-right: 2px;
-    animation: ws_active 20s ease-in-out 1;
-    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+    /* animation: ws_active 20s ease-in-out 1; */
+    /* transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682); */
 }
 
 #workspaces button:hover {
